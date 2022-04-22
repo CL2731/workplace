@@ -47,7 +47,7 @@ function next() {
     .then(responses => {
         switch (responses.continue) {
             case "Engineer": eng;
-            case "Intern": // add Intern function  ;
+            case "Intern": temp;
             default : // add function that will generate team
         }
     })
@@ -79,6 +79,36 @@ function eng() {
     .then(responses => {
         var newEngineer = new engineer(responses.username, responses.id, responses.email, responses.github)
         newTeam.push(newEngineer)
+        next()
+    })
+}
+
+function temp() {
+    inquirer.prompt([
+    {
+        type: "input",
+        name: "username",
+        message: "Please enter Intern name."
+    },
+    {
+        type: "input",
+        name: "id",
+        message: "What is their id?"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is their email?"
+    },
+    {
+        type: "intput",
+        name: "office",
+        message: "What is their School?"
+    },   
+    ])
+    .then(responses => {
+        var newIntern = new intern(responses.username, responses.id, responses.email, responses.school)
+        newTeam.push(newIntern)
         next()
     })
 }
