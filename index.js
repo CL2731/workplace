@@ -150,8 +150,3 @@ function buildTeam(){
 }
 
 appMenu();
-
-
-
-
-// fs writeFile that will create an html document

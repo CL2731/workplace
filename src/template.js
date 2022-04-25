@@ -4,7 +4,7 @@ const generateTeam = team => {
             <div class= "card-header">
             <h2 class= "card-title">${manager.getName()}
             </h2>
-            <h3 class= "card-title">${manager.getRole()}
+            <h3 class= "card-title"><i class= "fas fa-briefcase"> ${manager.getRole()}</i>
             </h3>
             </div>
 
@@ -12,9 +12,9 @@ const generateTeam = team => {
             <ul class= "list-group">
             <li class= "list-group-item">id:${manager.getId()}
             </li>
-            <li class= "list-group-item">id:${manager.getEmail()}
+            <li class= "list-group-item">Email:${manager.getEmail()}
             </li>
-            <li class= "list-group-item">id:${manager.getOfficeNumber()}
+            <li class= "list-group-item">Office Number:${manager.getOfficeNumber()}
             </li>
             </ul>
             </div>
@@ -24,9 +24,9 @@ const generateTeam = team => {
     const generateEngineer = engineer => {
         return `<div class= "card employee-card"> 
             <div class= "card-header">
-            <h2 class= "card-title">${engineer.getName()}
+            <h2 class= "card-title"> ${engineer.getName()}
             </h2>
-            <h3 class= "card-title">${engineer.getRole()}
+            <h3 class= "card-title"><i class= "fas fa-glasses"> ${engineer.getRole()}</i>
             </h3>
             </div>
 
@@ -34,9 +34,9 @@ const generateTeam = team => {
             <ul class= "list-group">
             <li class= "list-group-item">id:${engineer.getId()}
             </li>
-            <li class= "list-group-item">id:${engineer.getEmail()}
+            <li class= "list-group-item">Email:${engineer.getEmail()}
             </li>
-            <li class= "list-group-item">id:${engineer.getGitHub()}
+            <li class= "list-group-item">GitHub:${engineer.getGitHub()}
             </li>
             </ul>
             </div>
@@ -48,7 +48,7 @@ const generateTeam = team => {
             <div class= "card-header">
             <h2 class= "card-title">${intern.getName()}
             </h2>
-            <h3 class= "card-title">${intern.getRole()}
+            <h3 class= "card-title"><i class= "fas fa-graduation-cap"> ${intern.getRole()}</i>
             </h3>
             </div>
 
@@ -56,9 +56,9 @@ const generateTeam = team => {
             <ul class= "list-group">
             <li class= "list-group-item">id:${intern.getId()}
             </li>
-            <li class= "list-group-item">id:${intern.getEmail()}
+            <li class= "list-group-item">Email:${intern.getEmail()}
             </li>
-            <li class= "list-group-item">id:${intern.getOfficeNumber()}
+            <li class= "list-group-item">School:${intern.getSchool()}
             </li>
             </ul>
             </div>
@@ -82,7 +82,8 @@ module.exports = team => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c502137733.js"></script>
     <title>WorkPlace</title>
 </head>
 <body>
