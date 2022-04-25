@@ -1,16 +1,16 @@
 .team-header {
-    background-color: antiquewhite;
-    color: black;
+    background-color: rgba(18, 75, 150, 0.781);
+    color: rgb(247, 247, 247);
 }
 
 .team-area {
     margin: 2em auto;
-    max-width: 400px;
+    max-width: 500px;
     flex-wrap: wrap;
 }
 
 .card-body {
-    background-color: aliceblue;
+    background-color: rgb(17, 121, 211);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,9 +24,10 @@
     max-width: 250px;
     width: 85%;
     margin: 1em;
-    background-color: aqua;
+    background-color: rgb(187, 240, 240);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 20em;
 }
+

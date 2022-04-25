@@ -10,11 +10,11 @@ const generateTeam = team => {
 
             <div class= "card-body">
             <ul class= "list-group">
-            <li class= "list-group-item">id:${manager.getId()}
+            <li class= "list-group-item">ID: ${manager.getId()}
             </li>
-            <li class= "list-group-item">Email:${manager.getEmail()}
+            <li class= "list-group-item">Email: ${manager.getEmail()}
             </li>
-            <li class= "list-group-item">Office Number:${manager.getOfficeNumber()}
+            <li class= "list-group-item">Office Number: ${manager.getOfficeNumber()}
             </li>
             </ul>
             </div>
@@ -32,11 +32,11 @@ const generateTeam = team => {
 
             <div class= "card-body">
             <ul class= "list-group">
-            <li class= "list-group-item">id:${engineer.getId()}
+            <li class= "list-group-item">ID: ${engineer.getId()}
             </li>
-            <li class= "list-group-item">Email:${engineer.getEmail()}
+            <li class= "list-group-item">Email: ${engineer.getEmail()}
             </li>
-            <li class= "list-group-item">GitHub:${engineer.getGitHub()}
+            <li class= "list-group-item">GitHub: ${engineer.getGitHub()}
             </li>
             </ul>
             </div>
@@ -54,11 +54,11 @@ const generateTeam = team => {
 
             <div class= "card-body">
             <ul class= "list-group">
-            <li class= "list-group-item">id:${intern.getId()}
+            <li class= "list-group-item">ID: ${intern.getId()}
             </li>
-            <li class= "list-group-item">Email:${intern.getEmail()}
+            <li class= "list-group-item">Email: ${intern.getEmail()}
             </li>
-            <li class= "list-group-item">School:${intern.getSchool()}
+            <li class= "list-group-item">School: ${intern.getSchool()}
             </li>
             </ul>
             </div>
@@ -96,7 +96,7 @@ module.exports = team => {
 </div>
     <div class= "container">
     <div class= "row">
-    <div class= "col-12 d-flex justify-content-center team-area">${generateTeam(team)}
+    <div class= "col-12 d-flex justify-content-center team-area"> ${generateTeam(team)}
     </div>
     </div>
     </div>

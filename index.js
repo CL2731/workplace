@@ -49,7 +49,13 @@ function appMenu () {
     {
         type: "intput",
         name: "Manager_office",
-        message: "What is the office number?"
+        message: "What is the office number?",
+        validate: answer => {
+            const pass = answer.match(/^[1-9]\d*$/);
+            if (pass){
+                return true;
+            } 
+            return "Please enter a office number."}
     },   
     ])
     .then(responses => {
@@ -83,18 +89,35 @@ function addEngineer() {
     {
         type: "input",
         name: "Engineer_name",
-        message: "Please enter Engineer name."
-        // add validation and return
+        message: "Please enter Engineer name.",
+        validate: answer => {
+            if (answer !== ""){
+                return true;
+            } 
+            return "Please enter engineer's name."
+        }
     },
     {
         type: "input",
         name: "Engineer_id",
-        message: "What is their id?"
+        message: "What is their id?",
+        validate: answer => {
+            const pass = answer.match(/^[1-9]\d*$/);
+            if (pass){
+                return true;
+            } 
+            return "Please enter a valid id."}
     },
     {
         type: "input",
         name: "Engineer_email",
-        message: "What is their email?"
+        message: "What is their email?",
+        validate: answer => {
+            const pass = answer.match(/\S+@\S+\.\S+/);
+            if (pass){
+                return true;
+            } 
+            return "Please enter a valid email address."}
     },
     {
         type: "intput",
@@ -114,18 +137,35 @@ function temp() {
     {
         type: "input",
         name: "Intern_name",
-        message: "Please enter Intern name."
-        // add validation and return
+        message: "Please enter Intern name.",
+        validate: answer => {
+            if (answer !== ""){
+                return true;
+            } 
+            return "Please enter managers name."
+        }
     },
     {
         type: "input",
         name: "Intern_id",
-        message: "What is their id?"
+        message: "What is their id?",
+        validate: answer => {
+            const pass = answer.match(/^[1-9]\d*$/);
+            if (pass){
+                return true;
+            } 
+            return "Please enter a valid id."}
     },
     {
         type: "input",
         name: "Intern_email",
-        message: "What is their email?"
+        message: "What is their email?",
+        validate: answer => {
+            const pass = answer.match(/\S+@\S+\.\S+/);
+            if (pass){
+                return true;
+            } 
+            return "Please enter a valid email address."}
     },
     {
         type: "intput",
