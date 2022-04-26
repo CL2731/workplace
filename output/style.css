@@ -1,30 +1,33 @@
 .team-header {
-    background-color: rgba(18, 75, 150, 0.781);
+    background-color: rgba(2, 53, 119, 0.781);
     color: rgb(247, 247, 247);
 }
 
 .team-area {
     margin: 2em auto;
-    max-width: 500px;
     flex-wrap: wrap;
 }
 
 .card-body {
-    background-color: rgb(17, 121, 211);
+    background-color: rgb(171, 231, 231);
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .list-group-item {
-    text-decoration: none;
+    text-decoration: solid;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .employee-card {
+    box-shadow: 5px 5px 0px 0px grey;
     max-width: 250px;
     width: 85%;
     margin: 1em;
-    background-color: rgb(187, 240, 240);
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
